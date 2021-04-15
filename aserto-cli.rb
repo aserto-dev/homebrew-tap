@@ -1,4 +1,4 @@
-class AsertoCLI < Formula
+class AsertoCli < Formula
   desc "Aserto CLI"
   homepage "https://github.com/aserto-dev/aserto-cli"
   url "https://github.com/aserto-dev/aserto-cli/releases/download/v0.0.1/aserto_v0.0.1_darwin_x86_64.zip"
