@@ -6,6 +6,8 @@ class AsertoCli < Formula
   license "MIT"
   version "0.0.1"
 
+  bottle :unneeded
+  
   def install
     bin.install "aserto"
   end
