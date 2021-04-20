@@ -2,7 +2,7 @@ class Aserto < Formula
   desc "Aserto CLI"
   homepage "https://github.com/aserto-dev/aserto-cli"
   license "MIT"
-  version "0.0.1"
+  version "0.0.2"
 
   if OS.mac?
     url "https://github.com/aserto-dev/aserto-cli/releases/download/v0.0.2/aserto_v0.0.2_darwin_x86_64.zip"
