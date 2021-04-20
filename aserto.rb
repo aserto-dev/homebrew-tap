@@ -5,11 +5,11 @@ class Aserto < Formula
   version "0.0.2"
 
   if OS.mac?
-    url "https://github.com/aserto-dev/aserto-cli/releases/download/v0.0.2/aserto_cli_v0.0.2_darwin_x86_64.zip"
-    sha256 "f3a0ddb66d717c4fba63cb86186221383f5173179fbafe723ab0f89b5402c35e"
+    url "https://github.com/aserto-dev/aserto-cli/releases/download/v0.0.2/aserto_v0.0.2_darwin_x86_64.zip"
+    sha256 "958298198f59adedf0865c04c8917aee26bb4824818ee25f54bdd7e1db44b37b"
   elsif OS.linux?
-    url "https://github.com/aserto-dev/aserto-cli/releases/download/v0.0.2/aserto_cli_v0.0.2_linux_x86_64.zip"
-    sha256 "05af2a7c4589d9f6931f13f4286b4374f77625a4b4cf07d6de05b187eb880b83"
+    url "https://github.com/aserto-dev/aserto-cli/releases/download/v0.0.2/aserto_v0.0.2_linux_x86_64.zip"
+    sha256 "5af35e86e6ef7365ae186b485f2d60f6c6a4d7f39503b8da3a4858b64b115e51"
   end
 
   bottle :unneeded
