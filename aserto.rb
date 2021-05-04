@@ -2,14 +2,14 @@ class Aserto < Formula
   desc "Aserto CLI"
   homepage "https://github.com/aserto-dev/aserto-cli"
   license "MIT"
-  version "0.0.2"
+  version "0.0.9"
 
   if OS.mac?
-    url "https://github.com/aserto-dev/aserto-cli/releases/download/v0.0.2/aserto_v0.0.2_darwin_x86_64.zip"
-    sha256 "958298198f59adedf0865c04c8917aee26bb4824818ee25f54bdd7e1db44b37b"
+    url "https://github.com/aserto-dev/aserto-cli/releases/download/v0.0.9/aserto_0.0.9_darwin_x86_64.zip"
+    sha256 "b88b2d5ee8a9c424f400156e371443dda7f561e1591c68c5542d3f13542e1019"
   elsif OS.linux?
-    url "https://github.com/aserto-dev/aserto-cli/releases/download/v0.0.2/aserto_v0.0.2_linux_x86_64.zip"
-    sha256 "5af35e86e6ef7365ae186b485f2d60f6c6a4d7f39503b8da3a4858b64b115e51"
+    url "https://github.com/aserto-dev/aserto-cli/releases/download/v0.0.9/aserto_0.0.9_linux_x86_64.zip"
+    sha256 "05d5b6238213684c298c265b5ae90aa52b85cac53d43c909d5776c5a886911c4"
   end
 
   bottle :unneeded
