@@ -41,4 +41,4 @@ To uninstall use:
 | Aserto brew name                                                | Installation                                 | Descriptions                |
 | ----------------------------------------------------------------| ---------------------------------------------|---------------------------- |
 | [aserto](https://github.com/aserto-dev/aserto-cli)              | `brew install aserto-dev/tap/aserto`         | aserto command line         |                           
-| [aserto-idp-seed](ttps://github.com/aserto-dev/aserto-idp-seed) |`brew install aserto-dev/tap/aserto-idp-seed` | aserto IDP seeder utility   |                           
+| [aserto-idp-seed](https://github.com/aserto-dev/aserto-idp-seed) |`brew install aserto-dev/tap/aserto-idp-seed` | aserto IDP seeder utility   |                           
