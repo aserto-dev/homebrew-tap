@@ -16,24 +16,24 @@ To use the Aserto Homebrew tap, register it using:
 
 To install use: 
 
-	brew install <aserto brew name>
+	brew install <[aserto brew name](https://github.com/aserto-dev/homebrew-tap#available-brews)>
 
 or
 
-	brew install aserto-dev/tap/<aserto brew name>
+	brew install aserto-dev/tap/<[aserto brew name](https://github.com/aserto-dev/homebrew-tap#available-brews)>
 
 
 #### Update
 
 To update use:
 
-	brew upgrade <aserto brew name>
+	brew upgrade <[aserto brew name](https://github.com/aserto-dev/homebrew-tap#available-brews)>
 
 ### Uninstall
 
 To uninstall use:
 
-	brew uninstall <aserto brew name>
+	brew uninstall <[aserto brew name](https://github.com/aserto-dev/homebrew-tap#available-brews)>
 
 
 ## Available brews:
