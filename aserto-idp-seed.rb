@@ -5,17 +5,17 @@
 class AsertoIdpSeed < Formula
   desc "Aserto IDP seed tool"
   homepage "https://aserto.com/"
-  version "0.0.9"
+  version "0.0.10"
   license "MIT"
   bottle :unneeded
 
   if OS.mac? && Hardware::CPU.intel?
-    url "https://github.com/aserto-dev/aserto-idp-seed/releases/download/v0.0.9/aserto-idp-seed_0.0.9_darwin_x86_64.zip", :using => GitDownloadStrategy
-    sha256 "b7451b8af84b31ca275e4be19e24183c227da6b5c361545edc6e740ece85341f"
+    url "https://github.com/aserto-dev/aserto-idp-seed/releases/download/v0.0.10/aserto-idp-seed_0.0.10_darwin_x86_64.zip"
+    sha256 "7ba0e596a6f0fab495121c87e7664bcd230fa4ecd1e28e3875f3697662567276"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "https://github.com/aserto-dev/aserto-idp-seed/releases/download/v0.0.9/aserto-idp-seed_0.0.9_linux_x86_64.zip", :using => GitDownloadStrategy
-    sha256 "86a2f923d525dc4edaf5cbc0d05e6c8d1d873b3df8ccae53e4c2a661de7b31ab"
+    url "https://github.com/aserto-dev/aserto-idp-seed/releases/download/v0.0.10/aserto-idp-seed_0.0.10_linux_x86_64.zip"
+    sha256 "c38054593e3ceff7e7069b698cc295f3a9c4670fbe03bca2d8685049aafaab0d"
   end
 
   def install
