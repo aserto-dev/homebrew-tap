@@ -5,21 +5,21 @@
 class Aserto < Formula
   desc "Aserto CLI"
   homepage "https://docs.aserto.com/"
-  version "0.1.1"
+  version "0.1.3"
   license "MIT"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://storage.googleapis.com/aserto-cli/aserto/0.1.1/aserto_0.1.1_darwin_x86_64.zip", :using => CurlDownloadStrategy
-      sha256 "5ef10fdf46db27ecb964709ba61c8b3325fed0ad09f0928c8b4c04611aa313d0"
+      url "https://storage.googleapis.com/aserto-cli/aserto/0.1.3/aserto_0.1.3_darwin_x86_64.zip", :using => CurlDownloadStrategy
+      sha256 "510756c7e454d608838eac2da8206a076d8a82b339b7cfd4d02312eabae2816c"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://storage.googleapis.com/aserto-cli/aserto/0.1.1/aserto_0.1.1_linux_x86_64.zip", :using => CurlDownloadStrategy
-      sha256 "28357ab1e351bb54e6b6d2bcd39237f10f33c4f0bf46e1e227cd79969bba4a87"
+      url "https://storage.googleapis.com/aserto-cli/aserto/0.1.3/aserto_0.1.3_linux_x86_64.zip", :using => CurlDownloadStrategy
+      sha256 "6eb99152522838bf9b2cf6e34c092891583074617559b8dafa77ef735110f5b1"
     end
   end
 
