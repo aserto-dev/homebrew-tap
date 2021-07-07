@@ -5,21 +5,29 @@
 class AsertoIdpSeed < Formula
   desc "Aserto IDP seed tool"
   homepage "https://aserto.com/"
-  version "0.0.16"
+  version "0.0.17"
   license "MIT"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/aserto-dev/aserto-idp-seed/releases/download/v0.0.16/aserto-idp-seed_0.0.16_darwin_x86_64.zip"
-      sha256 "d94ae62997aac23b19760a85ac93e0de5ea8a2cadfae273858cb750949c17bb5"
+      url "https://github.com/aserto-dev/aserto-idp-seed/releases/download/v0.0.17/aserto-idp-seed_0.0.17_darwin_x86_64.zip"
+      sha256 "97037be25297320bd76bd89fbd3b67d07562a20dc4cb97b437fc56fd25a45261"
+    end
+    if Hardware::CPU.arm?
+      url "https://github.com/aserto-dev/aserto-idp-seed/releases/download/v0.0.17/aserto-idp-seed_0.0.17_darwin_arm64.zip"
+      sha256 "328efdad985ffcffb64e2efaa5e7444eff01420e7b2bb83c02e356b6a10e17cd"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/aserto-dev/aserto-idp-seed/releases/download/v0.0.16/aserto-idp-seed_0.0.16_linux_x86_64.zip"
-      sha256 "47d003465c2e0f329e2679c9ccb1d3dd4195d5bf3ecbd2688cfe1f1f4e054ee3"
+      url "https://github.com/aserto-dev/aserto-idp-seed/releases/download/v0.0.17/aserto-idp-seed_0.0.17_linux_x86_64.zip"
+      sha256 "c5d156e110ce1d48efd7be0b1d40cb0f4e5aa4e874c2b6f2a74b7280b800cbd5"
+    end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/aserto-dev/aserto-idp-seed/releases/download/v0.0.17/aserto-idp-seed_0.0.17_linux_arm64.zip"
+      sha256 "80643a5027cb3110daef9cbc4f3c5808b9ffdaa19d9b741c92d6f6f295fe4740"
     end
   end
 
