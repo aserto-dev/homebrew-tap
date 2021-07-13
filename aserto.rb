@@ -5,29 +5,29 @@
 class Aserto < Formula
   desc "Aserto CLI"
   homepage "https://docs.aserto.com/"
-  version "0.1.7"
+  version "0.1.10"
   license "MIT"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://storage.googleapis.com/aserto-cli/aserto/0.1.7/aserto_0.1.7_darwin_x86_64.zip", :using => CurlDownloadStrategy
-      sha256 "15bbb1f84c76c471abc47b9c2e16a06e209639005edd94365dbe36eb6a48cfd9"
+      url "https://storage.googleapis.com/aserto-cli/aserto/0.1.10/aserto_0.1.10_darwin_x86_64.zip", :using => CurlDownloadStrategy
+      sha256 "3201767d6a5344e853a7b7519024c15d955fcfe36c5c4d4d678fd6ea13b9423e"
     end
     if Hardware::CPU.arm?
-      url "https://storage.googleapis.com/aserto-cli/aserto/0.1.7/aserto_0.1.7_darwin_arm64.zip", :using => CurlDownloadStrategy
-      sha256 "ea42fa19a8b138ec771fcfe6c1934abaddee37affe0afdffb9ac654ffb45ae1a"
+      url "https://storage.googleapis.com/aserto-cli/aserto/0.1.10/aserto_0.1.10_darwin_arm64.zip", :using => CurlDownloadStrategy
+      sha256 "578f40020637ae1818086944dc690eb51a054aeef44a10595f328b9240fb2981"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://storage.googleapis.com/aserto-cli/aserto/0.1.7/aserto_0.1.7_linux_x86_64.zip", :using => CurlDownloadStrategy
-      sha256 "f6a823de13813cef7ac5e4d6a32af424bbafbd409821fde0a8c1fa1cfc2fa4a6"
+      url "https://storage.googleapis.com/aserto-cli/aserto/0.1.10/aserto_0.1.10_linux_x86_64.zip", :using => CurlDownloadStrategy
+      sha256 "dffe89b8de2479eec3feef3f41adf9c69365301e83558462ff570fccbd550482"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://storage.googleapis.com/aserto-cli/aserto/0.1.7/aserto_0.1.7_linux_arm64.zip", :using => CurlDownloadStrategy
-      sha256 "3c6ca81fdb98736d5dfbb5fbce4972ed6830d96ce2205fe89cff91a0325de322"
+      url "https://storage.googleapis.com/aserto-cli/aserto/0.1.10/aserto_0.1.10_linux_arm64.zip", :using => CurlDownloadStrategy
+      sha256 "54cafead7356072474870981b11d4a9660477d2f9efb2544e80ca97573dfe1b3"
     end
   end
 
