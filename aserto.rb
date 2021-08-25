@@ -5,29 +5,29 @@
 class Aserto < Formula
   desc "Aserto CLI"
   homepage "https://docs.aserto.com/"
-  version "0.1.14"
+  version "0.2.0"
   license "MIT"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://storage.googleapis.com/aserto-cli/aserto/0.1.14/aserto_0.1.14_darwin_x86_64.zip", :using => CurlDownloadStrategy
-      sha256 "a94bb0456d9ecedfcff9a2d5e82d094cb489af09cde9b5ebfa1c6d6b2af352a8"
+      url "https://storage.googleapis.com/aserto-cli/aserto/0.2.0/aserto_0.2.0_darwin_x86_64.zip", :using => CurlDownloadStrategy
+      sha256 "3035ca1ac09389a294940e2bfa99df9daab245a8b2d4ba720a6149f680b6f1b3"
     end
     if Hardware::CPU.arm?
-      url "https://storage.googleapis.com/aserto-cli/aserto/0.1.14/aserto_0.1.14_darwin_arm64.zip", :using => CurlDownloadStrategy
-      sha256 "f82eb5486bb1644f543236a42f49677be380286350df9583bfb661a41b18f121"
+      url "https://storage.googleapis.com/aserto-cli/aserto/0.2.0/aserto_0.2.0_darwin_arm64.zip", :using => CurlDownloadStrategy
+      sha256 "126f8a7a2be02fd936600aece9a57515c4a475727b62e22f01c39f6e438d27f4"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://storage.googleapis.com/aserto-cli/aserto/0.1.14/aserto_0.1.14_linux_x86_64.zip", :using => CurlDownloadStrategy
-      sha256 "24ea276d5f8c5a0bd5a5dc8feae2f3ceb1b662d222f8e47dea12d9a6d66035c0"
+      url "https://storage.googleapis.com/aserto-cli/aserto/0.2.0/aserto_0.2.0_linux_x86_64.zip", :using => CurlDownloadStrategy
+      sha256 "edc7a86b174c074fbc925cb40f0b11e9951095a1b59e22a4fb2b2d8a8084088a"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://storage.googleapis.com/aserto-cli/aserto/0.1.14/aserto_0.1.14_linux_arm64.zip", :using => CurlDownloadStrategy
-      sha256 "107a22b85a4b15310c98fe91a871ee38411c3754b5de539191c7d2094ba8a72d"
+      url "https://storage.googleapis.com/aserto-cli/aserto/0.2.0/aserto_0.2.0_linux_arm64.zip", :using => CurlDownloadStrategy
+      sha256 "1d7b2e2d3846e321671e800226a45bacdc313f9ee3ce7177e5c52801830a7de1"
     end
   end
 
