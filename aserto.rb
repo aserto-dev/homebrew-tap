@@ -5,29 +5,29 @@
 class Aserto < Formula
   desc "Aserto CLI"
   homepage "https://docs.aserto.com/"
-  version "0.2.0"
+  version "0.2.1"
   license "MIT"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://storage.googleapis.com/aserto-cli/aserto/0.2.0/aserto_0.2.0_darwin_x86_64.zip", :using => CurlDownloadStrategy
-      sha256 "3035ca1ac09389a294940e2bfa99df9daab245a8b2d4ba720a6149f680b6f1b3"
+      url "https://storage.googleapis.com/aserto-cli/aserto/0.2.1/aserto_0.2.1_darwin_x86_64.zip", :using => CurlDownloadStrategy
+      sha256 "a08d09a46ab4bce4a933b503d64d7204603e0eeb3c3de0c82dce2529c073e104"
     end
     if Hardware::CPU.arm?
-      url "https://storage.googleapis.com/aserto-cli/aserto/0.2.0/aserto_0.2.0_darwin_arm64.zip", :using => CurlDownloadStrategy
-      sha256 "126f8a7a2be02fd936600aece9a57515c4a475727b62e22f01c39f6e438d27f4"
+      url "https://storage.googleapis.com/aserto-cli/aserto/0.2.1/aserto_0.2.1_darwin_arm64.zip", :using => CurlDownloadStrategy
+      sha256 "89fba55671e05c3000de0f71c0dec41a7901ea00c214381dadae202b0c24f052"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://storage.googleapis.com/aserto-cli/aserto/0.2.0/aserto_0.2.0_linux_x86_64.zip", :using => CurlDownloadStrategy
-      sha256 "edc7a86b174c074fbc925cb40f0b11e9951095a1b59e22a4fb2b2d8a8084088a"
+      url "https://storage.googleapis.com/aserto-cli/aserto/0.2.1/aserto_0.2.1_linux_x86_64.zip", :using => CurlDownloadStrategy
+      sha256 "1d4cc7aac7bcd4c7d78947b524dc015ab53064e75b49dbf80bbb8249bd95d8f7"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://storage.googleapis.com/aserto-cli/aserto/0.2.0/aserto_0.2.0_linux_arm64.zip", :using => CurlDownloadStrategy
-      sha256 "1d7b2e2d3846e321671e800226a45bacdc313f9ee3ce7177e5c52801830a7de1"
+      url "https://storage.googleapis.com/aserto-cli/aserto/0.2.1/aserto_0.2.1_linux_arm64.zip", :using => CurlDownloadStrategy
+      sha256 "3e109b106e449b8627224b48d4a2ee4d2ad17bef11218cbccfb2bdc1a1b519d6"
     end
   end
 
