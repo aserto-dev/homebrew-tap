@@ -5,29 +5,29 @@
 class Sver < Formula
   desc "sver semantic version calculator"
   homepage "https://aserto.com/"
-  version "1.3.3"
+  version "1.3.4"
   license "MIT"
   bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/aserto-dev/sver/releases/download/v1.3.3/sver1.3.3_darwin_x86_64.zip"
-      sha256 "1aa4e0e3434d87ea62cf28a820f6d7a52270b9756d1ee15e9aa82438ea5b713f"
+      url "https://github.com/aserto-dev/sver/releases/download/v1.3.4/sver1.3.4_darwin_x86_64.zip"
+      sha256 "d130cda50b7e9441af34cfe58d965c37b66a92c47118af27273828901b80b704"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/aserto-dev/sver/releases/download/v1.3.3/sver1.3.3_darwin_arm64.zip"
-      sha256 "b0f22a6a00b91db555a72ae5d0f4bb102fb44b96ec0e49999835baaff96fc508"
+      url "https://github.com/aserto-dev/sver/releases/download/v1.3.4/sver1.3.4_darwin_arm64.zip"
+      sha256 "280cfa12640de83ca4898379a3a4dd0edf7d1cb7d0c18debc3189454f80eb91c"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/aserto-dev/sver/releases/download/v1.3.3/sver1.3.3_linux_x86_64.zip"
-      sha256 "d847436224627af1909ba64282e1174486505fb51e571a4478e9c0ad896f4ba0"
+      url "https://github.com/aserto-dev/sver/releases/download/v1.3.4/sver1.3.4_linux_x86_64.zip"
+      sha256 "d5fbb570f689345823da635caf8c5b7e5b438e2f68f94fe55ad675cc9bc38dbf"
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aserto-dev/sver/releases/download/v1.3.3/sver1.3.3_linux_arm64.zip"
-      sha256 "c89239c6c644defca61a8fca25bdbfd8474dcd85bb96ee732f0e62d91ff6c3b9"
+      url "https://github.com/aserto-dev/sver/releases/download/v1.3.4/sver1.3.4_linux_arm64.zip"
+      sha256 "b6bd2cecfac72988b4a79002f7061b4212adce42dcf3e581d1025f245e5f80a4"
     end
   end
 
