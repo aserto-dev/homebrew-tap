@@ -7,7 +7,6 @@ class Aserto < Formula
   homepage "https://docs.aserto.com/"
   version "0.2.1"
   license "MIT"
-  bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
