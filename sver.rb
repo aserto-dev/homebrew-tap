@@ -7,7 +7,6 @@ class Sver < Formula
   homepage "https://aserto.com/"
   version "1.3.4"
   license "MIT"
-  bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
