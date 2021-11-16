@@ -7,7 +7,6 @@ class AsertoIdpSeed < Formula
   homepage "https://aserto.com/"
   version "0.0.17"
   license "MIT"
-  bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
