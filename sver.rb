@@ -5,34 +5,45 @@
 class Sver < Formula
   desc "sver semantic version calculator"
   homepage "https://aserto.com/"
-  version "1.3.7"
+  version "1.3.9"
   license "MIT"
-  bottle :unneeded
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/aserto-dev/sver/releases/download/v1.3.7/sver1.3.7_darwin_x86_64.zip"
-      sha256 "051e22e65090668bc95fefe219619812a4a358b03a820d14f683271af98f1271"
+      url "https://github.com/aserto-dev/sver/releases/download/v1.3.9/sver1.3.9_darwin_x86_64.zip"
+      sha256 "37e2e50785ad0887a11055eb361477548734256e37e15fa86de568b0108fc9e7"
+
+      def install
+        bin.install "sver"
+      end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/aserto-dev/sver/releases/download/v1.3.7/sver1.3.7_darwin_arm64.zip"
-      sha256 "9598c83ba1c44b6fa6daf7bdcdd7e061c7249505646989f1d4b819c397788bd7"
+      url "https://github.com/aserto-dev/sver/releases/download/v1.3.9/sver1.3.9_darwin_arm64.zip"
+      sha256 "ce05a23892940d1a2220ea60c74dfc2922f65d6cadc8d4a1a399c9ae7b952630"
+
+      def install
+        bin.install "sver"
+      end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/aserto-dev/sver/releases/download/v1.3.7/sver1.3.7_linux_x86_64.zip"
-      sha256 "333cb76366e583044755b85816ff46cf0e1152790068409c16966058e73c7447"
+      url "https://github.com/aserto-dev/sver/releases/download/v1.3.9/sver1.3.9_linux_x86_64.zip"
+      sha256 "6b133c5b840d60d243d06873b91deb0684fe5f8c440a0bc410e71e098413ac97"
+
+      def install
+        bin.install "sver"
+      end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aserto-dev/sver/releases/download/v1.3.7/sver1.3.7_linux_arm64.zip"
-      sha256 "bfda67675f01965505f7ad3c5df422deecb34f7b20b8d43a7f28f1a167992034"
-    end
-  end
+      url "https://github.com/aserto-dev/sver/releases/download/v1.3.9/sver1.3.9_linux_arm64.zip"
+      sha256 "eaa38f91a2dd27ace8091f24929cc2802fe09e0cf0178373270fdd06b39e74cf"
 
-  def install
-    bin.install "sver"
+      def install
+        bin.install "sver"
+      end
+    end
   end
 
   test do
