@@ -5,21 +5,21 @@
 class Aserto < Formula
   desc "Aserto CLI"
   homepage "https://docs.aserto.com/"
-  version "0.8.0"
+  version "0.8.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://storage.googleapis.com/aserto-cli/aserto/0.8.0/aserto_darwin_arm64.zip", :using => CurlDownloadStrategy
-      sha256 "34dc602eefe78657ee6c62c0bb105cae1e6459472449eaa34e7eca02642e9d19"
+      url "https://storage.googleapis.com/aserto-cli/aserto/0.8.3/aserto_darwin_arm64.zip", :using => CurlDownloadStrategy
+      sha256 "1e17241aafb8548a55eccc472c0ad21e3cb58ee50b6bfa5a7cb34f519cba176e"
 
       def install
         bin.install "aserto"
       end
     end
     if Hardware::CPU.intel?
-      url "https://storage.googleapis.com/aserto-cli/aserto/0.8.0/aserto_darwin_x86_64.zip", :using => CurlDownloadStrategy
-      sha256 "0168bc579a6a952dcbfd9ffdfdfebec256402d23adff9e609affa690bce5de6d"
+      url "https://storage.googleapis.com/aserto-cli/aserto/0.8.3/aserto_darwin_x86_64.zip", :using => CurlDownloadStrategy
+      sha256 "492de97c8f8464b6c96c51517387ed321792787e6ec92d7f98e97dae9d17e525"
 
       def install
         bin.install "aserto"
@@ -29,16 +29,16 @@ class Aserto < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://storage.googleapis.com/aserto-cli/aserto/0.8.0/aserto_linux_arm64.zip", :using => CurlDownloadStrategy
-      sha256 "0e3786e41dc4f43d645af8c8fdc9c639a27b84ba3968c4ed38fd340e58226121"
+      url "https://storage.googleapis.com/aserto-cli/aserto/0.8.3/aserto_linux_arm64.zip", :using => CurlDownloadStrategy
+      sha256 "79160f1025454effe3e1856fc92995065ef8ad3c7cf698b5e70c926e45420715"
 
       def install
         bin.install "aserto"
       end
     end
     if Hardware::CPU.intel?
-      url "https://storage.googleapis.com/aserto-cli/aserto/0.8.0/aserto_linux_x86_64.zip", :using => CurlDownloadStrategy
-      sha256 "f8980f3f62cfe7ec79370b18f4178df8f634d84dca389f01e991a43cc9635ac7"
+      url "https://storage.googleapis.com/aserto-cli/aserto/0.8.3/aserto_linux_x86_64.zip", :using => CurlDownloadStrategy
+      sha256 "e2298fe0688fa2d5daa0769478857bf091661c18bf57fbc414748f86f4583f2c"
 
       def install
         bin.install "aserto"
