@@ -5,21 +5,21 @@
 class AsertoIdp < Formula
   desc "Aserto IDP CLI"
   homepage "https://aserto.com/"
-  version "0.8.3"
+  version "0.8.4"
   license "Apache License Version 2.0"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/aserto-dev/aserto-idp/releases/download/v0.8.3/aserto-idp0.8.3_darwin_x86_64.zip"
-      sha256 "00b39fa4c462df17d150025401c9fce54fd8aca50ada19f46ca8b60899bdb714"
+    if Hardware::CPU.arm?
+      url "https://github.com/aserto-dev/aserto-idp/releases/download/v0.8.4/aserto-idp0.8.4_darwin_arm64.zip"
+      sha256 "08779e92011e70d3e4e718275b07ab2d7459dafd2c590eb58a00790457420dca"
 
       def install
         bin.install "aserto-idp"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/aserto-dev/aserto-idp/releases/download/v0.8.3/aserto-idp0.8.3_darwin_arm64.zip"
-      sha256 "ac25771b9856b9cb1e915fd32c267562268e12c99687c179467990685c4664c3"
+    if Hardware::CPU.intel?
+      url "https://github.com/aserto-dev/aserto-idp/releases/download/v0.8.4/aserto-idp0.8.4_darwin_x86_64.zip"
+      sha256 "ffb4ab1a4245f28f9601f5833a3b962b6720e16b4e4d64155e902f8eaab901fe"
 
       def install
         bin.install "aserto-idp"
@@ -29,16 +29,16 @@ class AsertoIdp < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aserto-dev/aserto-idp/releases/download/v0.8.3/aserto-idp0.8.3_linux_arm64.zip"
-      sha256 "b1598c27947eaa5dbbc51b303d05333f61b7c8eb28199d0b12cd61f6ae3c5332"
+      url "https://github.com/aserto-dev/aserto-idp/releases/download/v0.8.4/aserto-idp0.8.4_linux_arm64.zip"
+      sha256 "b389ae72eba764daee550253119d5d005c2b93bfa19b490f371f91b97b367916"
 
       def install
         bin.install "aserto-idp"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aserto-dev/aserto-idp/releases/download/v0.8.3/aserto-idp0.8.3_linux_x86_64.zip"
-      sha256 "6e5b5f75a812ae9ad908a2c2fdba84417b22bfaef579e70cfeda96d36359582d"
+      url "https://github.com/aserto-dev/aserto-idp/releases/download/v0.8.4/aserto-idp0.8.4_linux_x86_64.zip"
+      sha256 "3d4818977e3def819a3f176f086a00da0e7cbfc53dfa09ecbce18facadab037a"
 
       def install
         bin.install "aserto-idp"
