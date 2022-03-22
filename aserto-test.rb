@@ -5,21 +5,21 @@
 class AsertoTest < Formula
   desc "Aserto Test Runner"
   homepage "https://docs.aserto.com/"
-  version "0.0.3"
+  version "0.0.4"
   license "MIT"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://storage.googleapis.com/aserto-cli/aserto-test/0.0.3/aserto-test_darwin_arm64.zip", :using => CurlDownloadStrategy
-      sha256 "3fa68b29060f084f5eba65913e045a69469fe851b43a544dd91daf6272f23fbf"
+    if Hardware::CPU.intel?
+      url "https://storage.googleapis.com/aserto-cli/aserto-test/0.0.4/aserto-test_darwin_x86_64.zip", :using => CurlDownloadStrategy
+      sha256 "fba68691f1b3ff8aa1004b6406cbd641cf8f2e69eece56ef9784e6d2f1e74a77"
 
       def install
         bin.install "aserto-test"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://storage.googleapis.com/aserto-cli/aserto-test/0.0.3/aserto-test_darwin_x86_64.zip", :using => CurlDownloadStrategy
-      sha256 "3e6e95304be79066ffd300d393c56ce00df1e08504dc8139ba4b1cf4867fdff9"
+    if Hardware::CPU.arm?
+      url "https://storage.googleapis.com/aserto-cli/aserto-test/0.0.4/aserto-test_darwin_arm64.zip", :using => CurlDownloadStrategy
+      sha256 "87159e0923cb64acafd6684f120025c3ef9fd085909c97b8cfea7899ebed68b0"
 
       def install
         bin.install "aserto-test"
@@ -28,17 +28,17 @@ class AsertoTest < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://storage.googleapis.com/aserto-cli/aserto-test/0.0.3/aserto-test_linux_arm64.zip", :using => CurlDownloadStrategy
-      sha256 "ec674751f468fb32a73991803637049645abf1a2679592826bebc833b43d7c67"
+    if Hardware::CPU.intel?
+      url "https://storage.googleapis.com/aserto-cli/aserto-test/0.0.4/aserto-test_linux_x86_64.zip", :using => CurlDownloadStrategy
+      sha256 "37748b9292ce6065d22badf195aad2b5ff8734dc8eb7cb33ea84a6fcc8619eb0"
 
       def install
         bin.install "aserto-test"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://storage.googleapis.com/aserto-cli/aserto-test/0.0.3/aserto-test_linux_x86_64.zip", :using => CurlDownloadStrategy
-      sha256 "df7074b65f148d00ebccfdce39ba909d8d77c17e3653a9896778f789c7acbaf1"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://storage.googleapis.com/aserto-cli/aserto-test/0.0.4/aserto-test_linux_arm64.zip", :using => CurlDownloadStrategy
+      sha256 "5ea4fd2ef7ce2ded2057cca90d9647caa191b2fcea3b3441e41f49d0ea915943"
 
       def install
         bin.install "aserto-test"
