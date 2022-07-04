@@ -11,7 +11,7 @@ class Aserto < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://storage.googleapis.com/aserto-cli/aserto/0.8.11/aserto_darwin_arm64.zip", :using => CurlDownloadStrategy
-      sha256 "3e2dba53d4a70e8a9a4a488e87084dfc32a16693c6b22336b125c3faafd32de0"
+      sha256 "53d6a3c5881066e0feccf376385c749c21daacd930baf68945163a7f6c4c6db8"
 
       def install
         bin.install "aserto"
@@ -19,7 +19,7 @@ class Aserto < Formula
     end
     if Hardware::CPU.intel?
       url "https://storage.googleapis.com/aserto-cli/aserto/0.8.11/aserto_darwin_x86_64.zip", :using => CurlDownloadStrategy
-      sha256 "b17cc3f85a39175c384abb366059bcfc234ea0392b2e3d690f648ba5ce2ba81d"
+      sha256 "516ea62479fe30f437a102130294495606f27944ca08ef7278ce80e3b01456b3"
 
       def install
         bin.install "aserto"
@@ -30,7 +30,7 @@ class Aserto < Formula
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://storage.googleapis.com/aserto-cli/aserto/0.8.11/aserto_linux_arm64.zip", :using => CurlDownloadStrategy
-      sha256 "024cec2a2debf99531ca14ff5845143874698d555a29773ce15d9aacc0a52c34"
+      sha256 "491436d1e6e55e1c70b86ec6292cb2387eecac3a92d27386222a0b225cff5340"
 
       def install
         bin.install "aserto"
@@ -38,7 +38,7 @@ class Aserto < Formula
     end
     if Hardware::CPU.intel?
       url "https://storage.googleapis.com/aserto-cli/aserto/0.8.11/aserto_linux_x86_64.zip", :using => CurlDownloadStrategy
-      sha256 "6633ba18b5ed328853b63a834b99f1a2bfe9eb8606faea381d8debb210aa2a17"
+      sha256 "27a7fce07eb210a7436650fafdfe9a56bf7cf4afb761114d3dffe2874f2814d0"
 
       def install
         bin.install "aserto"
