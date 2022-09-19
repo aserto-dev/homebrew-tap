@@ -5,21 +5,21 @@
 class Sver < Formula
   desc "sver semantic version calculator"
   homepage "https://aserto.com/"
-  version "1.3.9"
+  version "1.3.10"
   license "MIT"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/aserto-dev/sver/releases/download/v1.3.9/sver1.3.9_darwin_x86_64.zip"
-      sha256 "37e2e50785ad0887a11055eb361477548734256e37e15fa86de568b0108fc9e7"
+    if Hardware::CPU.arm?
+      url "https://github.com/aserto-dev/sver/releases/download/v1.3.10/sver1.3.10_darwin_arm64.zip"
+      sha256 "a02468ba9cd2ccb687a32dc167ccb2dd924bca35c208d3c458c8a46d9d25d835"
 
       def install
         bin.install "sver"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/aserto-dev/sver/releases/download/v1.3.9/sver1.3.9_darwin_arm64.zip"
-      sha256 "ce05a23892940d1a2220ea60c74dfc2922f65d6cadc8d4a1a399c9ae7b952630"
+    if Hardware::CPU.intel?
+      url "https://github.com/aserto-dev/sver/releases/download/v1.3.10/sver1.3.10_darwin_x86_64.zip"
+      sha256 "56485067ae4d6a73fc459b618f13ea4abce0d3e5f481363c66c90f980226566f"
 
       def install
         bin.install "sver"
@@ -28,17 +28,17 @@ class Sver < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/aserto-dev/sver/releases/download/v1.3.9/sver1.3.9_linux_x86_64.zip"
-      sha256 "6b133c5b840d60d243d06873b91deb0684fe5f8c440a0bc410e71e098413ac97"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/aserto-dev/sver/releases/download/v1.3.10/sver1.3.10_linux_arm64.zip"
+      sha256 "82b734536ac9c7f8206fd0620fb84812322ff7a5bd7f20eb9a8eb03ff1586584"
 
       def install
         bin.install "sver"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aserto-dev/sver/releases/download/v1.3.9/sver1.3.9_linux_arm64.zip"
-      sha256 "eaa38f91a2dd27ace8091f24929cc2802fe09e0cf0178373270fdd06b39e74cf"
+    if Hardware::CPU.intel?
+      url "https://github.com/aserto-dev/sver/releases/download/v1.3.10/sver1.3.10_linux_x86_64.zip"
+      sha256 "36dd12c685c01e77bef5d108d7cf12e3da09f65e0b728a6ea591870778380889"
 
       def install
         bin.install "sver"
