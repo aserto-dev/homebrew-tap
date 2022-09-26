@@ -5,21 +5,21 @@
 class Sver < Formula
   desc "sver semantic version calculator"
   homepage "https://aserto.com/"
-  version "1.3.10"
+  version "1.3.11"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/aserto-dev/sver/releases/download/v1.3.10/sver1.3.10_darwin_arm64.zip"
-      sha256 "a02468ba9cd2ccb687a32dc167ccb2dd924bca35c208d3c458c8a46d9d25d835"
+      url "https://github.com/aserto-dev/sver/releases/download/v1.3.11/sver1.3.11_darwin_arm64.zip"
+      sha256 "e33f39f8009638070c36204f7163b5eb3b689a17b5aaee2416b0f0f8a7f29a41"
 
       def install
         bin.install "sver"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aserto-dev/sver/releases/download/v1.3.10/sver1.3.10_darwin_x86_64.zip"
-      sha256 "56485067ae4d6a73fc459b618f13ea4abce0d3e5f481363c66c90f980226566f"
+      url "https://github.com/aserto-dev/sver/releases/download/v1.3.11/sver1.3.11_darwin_x86_64.zip"
+      sha256 "7867076c5ecca0ff4ea0d8c6506dc552a18d10f38bfaa29e66ff0d674f33ad9d"
 
       def install
         bin.install "sver"
@@ -29,16 +29,16 @@ class Sver < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aserto-dev/sver/releases/download/v1.3.10/sver1.3.10_linux_arm64.zip"
-      sha256 "82b734536ac9c7f8206fd0620fb84812322ff7a5bd7f20eb9a8eb03ff1586584"
+      url "https://github.com/aserto-dev/sver/releases/download/v1.3.11/sver1.3.11_linux_arm64.zip"
+      sha256 "478d9164515331c56fdfdf6803736156daea5535917c6fcc2dd0725d1804b2d7"
 
       def install
         bin.install "sver"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aserto-dev/sver/releases/download/v1.3.10/sver1.3.10_linux_x86_64.zip"
-      sha256 "36dd12c685c01e77bef5d108d7cf12e3da09f65e0b728a6ea591870778380889"
+      url "https://github.com/aserto-dev/sver/releases/download/v1.3.11/sver1.3.11_linux_x86_64.zip"
+      sha256 "a756f175566cf8fe44712bfd2ec69fbdc7ad6853a55512566a01e11acc7c8c48"
 
       def install
         bin.install "sver"
