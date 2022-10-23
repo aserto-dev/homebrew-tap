@@ -44,3 +44,4 @@ To uninstall use:
 | [aserto-idp](https://github.com/aserto-dev/aserto-idp)           | `brew install aserto-dev/tap/aserto-idp`     | aserto IDP CLI              |
 | [aserto-test](https://github.com/aserto-dev/aserto-test)         | `brew install aserto-dev/tap/aserto-test`    | aserto test runner          |
 | [sver](https://github.com/aserto-dev/sver)                       | `brew install aserto-dev/tap/sver`           | semantic version utility    |
+| [topaz](https://github.com/aserto-dev/topaz)                     | `brew install aserto-dev/tap/topaz`          | topaz command line          |
