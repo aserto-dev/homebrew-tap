@@ -5,21 +5,21 @@
 class Sver < Formula
   desc "sver semantic version calculator"
   homepage "https://aserto.com/"
-  version "1.3.11"
+  version "1.3.12"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/aserto-dev/sver/releases/download/v1.3.11/sver1.3.11_darwin_arm64.zip"
-      sha256 "e33f39f8009638070c36204f7163b5eb3b689a17b5aaee2416b0f0f8a7f29a41"
+      url "https://github.com/aserto-dev/sver/releases/download/v1.3.12/sver1.3.12_darwin_arm64.zip"
+      sha256 "82046bf2c7c3004368ebb565798d38c071437d749311c81ebdc20db1c7bf1274"
 
       def install
         bin.install "sver"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aserto-dev/sver/releases/download/v1.3.11/sver1.3.11_darwin_x86_64.zip"
-      sha256 "7867076c5ecca0ff4ea0d8c6506dc552a18d10f38bfaa29e66ff0d674f33ad9d"
+      url "https://github.com/aserto-dev/sver/releases/download/v1.3.12/sver1.3.12_darwin_x86_64.zip"
+      sha256 "76ba2fa2faf625c462fda07e12560f13fc219203aac625f0701c4c735173700f"
 
       def install
         bin.install "sver"
@@ -28,17 +28,17 @@ class Sver < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aserto-dev/sver/releases/download/v1.3.11/sver1.3.11_linux_arm64.zip"
-      sha256 "478d9164515331c56fdfdf6803736156daea5535917c6fcc2dd0725d1804b2d7"
+    if Hardware::CPU.intel?
+      url "https://github.com/aserto-dev/sver/releases/download/v1.3.12/sver1.3.12_linux_x86_64.zip"
+      sha256 "701f7e662c82f205d29bfd5842bb2569087bbd8f3ec48df9fa4902e440ad1eeb"
 
       def install
         bin.install "sver"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/aserto-dev/sver/releases/download/v1.3.11/sver1.3.11_linux_x86_64.zip"
-      sha256 "a756f175566cf8fe44712bfd2ec69fbdc7ad6853a55512566a01e11acc7c8c48"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/aserto-dev/sver/releases/download/v1.3.12/sver1.3.12_linux_arm64.zip"
+      sha256 "401ecbf30ece34d87a49444d0c22daf74c246695bae2e563e284cf6eaf4f3b80"
 
       def install
         bin.install "sver"
