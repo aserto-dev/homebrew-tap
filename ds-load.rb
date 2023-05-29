@@ -10,7 +10,7 @@ class DsLoad < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/aserto-dev/ds-load/releases/download/v0.0.9/ds_load_0.0.9_darwin_arm64.zip", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      url "https://github.com/aserto-dev/ds-load/releases/download/v0.0.9/ds_load_0.0.9_darwin_arm64.zip", :using=> GitHubPrivateRepositoryReleaseDownloadStrategy
       sha256 "5975bedad3677b126c1a069d938c23d1da966e5fb9626e8d3a992f4473e311d4"
 
       def install
@@ -18,7 +18,7 @@ class DsLoad < Formula
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/aserto-dev/ds-load/releases/download/v0.0.9/ds_load_0.0.9_darwin_x86_64.zip", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      url "https://github.com/aserto-dev/ds-load/releases/download/v0.0.9/ds_load_0.0.9_darwin_x86_64.zip", :using=> GitHubPrivateRepositoryReleaseDownloadStrategy
       sha256 "29b8379212fe99377035680fdad47c2ae1467292a5cc77837cd0351a631e8071"
 
       def install
@@ -29,7 +29,7 @@ class DsLoad < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/aserto-dev/ds-load/releases/download/v0.0.9/ds_load_0.0.9_linux_x86_64.zip", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      url "https://github.com/aserto-dev/ds-load/releases/download/v0.0.9/ds_load_0.0.9_linux_x86_64.zip", :using=> GitHubPrivateRepositoryReleaseDownloadStrategy
       sha256 "5ffe103c79159bb4fd2e332a50ac165de08946315762c741d0a8d6d72a64a4e5"
 
       def install
@@ -37,7 +37,7 @@ class DsLoad < Formula
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aserto-dev/ds-load/releases/download/v0.0.9/ds_load_0.0.9_linux_arm64.zip", using: GitHubPrivateRepositoryReleaseDownloadStrategy
+      url "https://github.com/aserto-dev/ds-load/releases/download/v0.0.9/ds_load_0.0.9_linux_arm64.zip", :using=> GitHubPrivateRepositoryReleaseDownloadStrategy
       sha256 "1118d5511427a72d456b5abccc081157229822fa7793d1ed2499ef2f38a26e32"
 
       def install
