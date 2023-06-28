@@ -49,4 +49,3 @@ V1 compatible:
 | -----------------------------------------------------------------| ---------------------------------------------|---------------------------- |
 | [aserto](https://github.com/aserto-dev/aserto-cli)               | `brew install aserto-dev/tap/aserto`         | aserto command line         |
 | [aserto-idp](https://github.com/aserto-dev/aserto-idp)           | `brew install aserto-dev/tap/aserto-idp`     | aserto IDP CLI              |
-| -----------------------------------------------------------------| ---------------------------------------------|---------------------------- |
