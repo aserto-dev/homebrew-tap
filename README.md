@@ -38,10 +38,15 @@ To uninstall use:
 
 ## Available brews:
 
+V2 compatible:
+| Aserto brew name                                                 | Installation                                 | Descriptions                |
+| -----------------------------------------------------------------| ---------------------------------------------|---------------------------- |
+| [topaz](https://github.com/aserto-dev/topaz)                     | `brew install aserto-dev/tap/topaz`          | topaz command line          |
+| [ds-load](https://github.com/aserto-dev/ds-load)                 | `brew install aserto-dev/tap/ds-load`        | directory loader            |
+
+V1 compatible:
 | Aserto brew name                                                 | Installation                                 | Descriptions                |
 | -----------------------------------------------------------------| ---------------------------------------------|---------------------------- |
 | [aserto](https://github.com/aserto-dev/aserto-cli)               | `brew install aserto-dev/tap/aserto`         | aserto command line         |
 | [aserto-idp](https://github.com/aserto-dev/aserto-idp)           | `brew install aserto-dev/tap/aserto-idp`     | aserto IDP CLI              |
-| [aserto-test](https://github.com/aserto-dev/aserto-test)         | `brew install aserto-dev/tap/aserto-test`    | aserto test runner          |
-| [sver](https://github.com/aserto-dev/sver)                       | `brew install aserto-dev/tap/sver`           | semantic version utility    |
-| [topaz](https://github.com/aserto-dev/topaz)                     | `brew install aserto-dev/tap/topaz`          | topaz command line          |
+| -----------------------------------------------------------------| ---------------------------------------------|---------------------------- |
