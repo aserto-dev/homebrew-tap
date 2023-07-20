@@ -5,29 +5,33 @@
 class DsLoad < Formula
   desc "DS Load CLI"
   homepage "https://docs.aserto.com/"
-  version "0.0.21"
+  version "0.0.22"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/aserto-dev/ds-load/releases/download/v0.0.21/ds-load_0.0.21_darwin_x86_64.zip", using: CurlDownloadStrategy
-      sha256 "874ff10bd6558ba2c8598c19d7554f4c642b091cd90fe5bf44fb468f5eedde92"
+      url "https://github.com/aserto-dev/ds-load/releases/download/v0.0.22/ds-load_0.0.22_darwin_x86_64.zip", using: CurlDownloadStrategy
+      sha256 "a39469ba64cc1e387a03af8b14c8381352bbf9c428732cbbae3edde7e7fab5ba"
 
       def install
         bin.install "ds-load"
         bin.install "ds-load-auth0"
         bin.install "ds-load-azuread"
+        bin.install "ds-load-cognito"
+        bin.install "ds-load-google"
         bin.install "ds-load-okta"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/aserto-dev/ds-load/releases/download/v0.0.21/ds-load_0.0.21_darwin_arm64.zip", using: CurlDownloadStrategy
-      sha256 "70b2ae4d60c19d424ccdbedce0dfe1676219484f5147d9010bd1d23b53b03fac"
+      url "https://github.com/aserto-dev/ds-load/releases/download/v0.0.22/ds-load_0.0.22_darwin_arm64.zip", using: CurlDownloadStrategy
+      sha256 "59a3c84c8998bb9844376e5c08cc12f38c01dc1c81dc6e4d90f86cc2bddc8278"
 
       def install
         bin.install "ds-load"
         bin.install "ds-load-auth0"
         bin.install "ds-load-azuread"
+        bin.install "ds-load-cognito"
+        bin.install "ds-load-google"
         bin.install "ds-load-okta"
       end
     end
@@ -35,24 +39,28 @@ class DsLoad < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/aserto-dev/ds-load/releases/download/v0.0.21/ds-load_0.0.21_linux_x86_64.zip", using: CurlDownloadStrategy
-      sha256 "8ec4249c066e3b682cb94ee841df8fb314fe902c4b23c5c66b5b8c385740ab89"
+      url "https://github.com/aserto-dev/ds-load/releases/download/v0.0.22/ds-load_0.0.22_linux_x86_64.zip", using: CurlDownloadStrategy
+      sha256 "94aef5a68b2c1ed39837a8a6988dd3160fabb6d893dd20f3a8014db856a0d271"
 
       def install
         bin.install "ds-load"
         bin.install "ds-load-auth0"
         bin.install "ds-load-azuread"
+        bin.install "ds-load-cognito"
+        bin.install "ds-load-google"
         bin.install "ds-load-okta"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aserto-dev/ds-load/releases/download/v0.0.21/ds-load_0.0.21_linux_arm64.zip", using: CurlDownloadStrategy
-      sha256 "381499c53b39f5f11f6449cce7c4161ac5a013a413b047a7e02fa52a43ceb2fe"
+      url "https://github.com/aserto-dev/ds-load/releases/download/v0.0.22/ds-load_0.0.22_linux_arm64.zip", using: CurlDownloadStrategy
+      sha256 "f13d47faf8ff220bf64c3869a104751fa35f6a64931223b493ce3f56079d116e"
 
       def install
         bin.install "ds-load"
         bin.install "ds-load-auth0"
         bin.install "ds-load-azuread"
+        bin.install "ds-load-cognito"
+        bin.install "ds-load-google"
         bin.install "ds-load-okta"
       end
     end
