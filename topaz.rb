@@ -5,21 +5,21 @@
 class Topaz < Formula
   desc "Topaz CLI"
   homepage "https://www.topaz.sh/docs/"
-  version "0.30.18"
+  version "0.30.19"
   license "MIT"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://storage.googleapis.com/topaz-cli/topaz/0.30.18/topaz_darwin_x86_64.zip", using: CurlDownloadStrategy
-      sha256 "a76d681a81509fccdf8e2d988689f6ac6d7686040311a4017bd8a04761df81c4"
+    if Hardware::CPU.arm?
+      url "https://storage.googleapis.com/topaz-cli/topaz/0.30.19/topaz_darwin_arm64.zip", using: CurlDownloadStrategy
+      sha256 "bba41a3e4d7311ffe2377c1400447aaa99d8176ed4041adeaaa30ae36c7093c0"
 
       def install
         bin.install "topaz"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://storage.googleapis.com/topaz-cli/topaz/0.30.18/topaz_darwin_arm64.zip", using: CurlDownloadStrategy
-      sha256 "12204786ebc4211cd47d449d4e5d1399eb11418fdfd8532931823b392b9e5a7b"
+    if Hardware::CPU.intel?
+      url "https://storage.googleapis.com/topaz-cli/topaz/0.30.19/topaz_darwin_x86_64.zip", using: CurlDownloadStrategy
+      sha256 "07221b5038f91fa4ebc37e0df3fcea80212b5eeda769bf75f60d81fff3341f9d"
 
       def install
         bin.install "topaz"
@@ -28,17 +28,17 @@ class Topaz < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://storage.googleapis.com/topaz-cli/topaz/0.30.18/topaz_linux_arm64.zip", using: CurlDownloadStrategy
-      sha256 "193a734947939ddac79f08aaec708ccc1954edbe7ad3c51966e4eca4bf91c883"
+    if Hardware::CPU.intel?
+      url "https://storage.googleapis.com/topaz-cli/topaz/0.30.19/topaz_linux_x86_64.zip", using: CurlDownloadStrategy
+      sha256 "b83f55bb4e61e765d4f2b598a708c98a490ac2181420c20461a8c6f3039211db"
 
       def install
         bin.install "topaz"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://storage.googleapis.com/topaz-cli/topaz/0.30.18/topaz_linux_x86_64.zip", using: CurlDownloadStrategy
-      sha256 "4fb701d054b34433e784880452fb61e376d2c78a3291b9999eec6a9fc691d267"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://storage.googleapis.com/topaz-cli/topaz/0.30.19/topaz_linux_arm64.zip", using: CurlDownloadStrategy
+      sha256 "07c33fc217d4ee1772f454c24d65ffc9e66ca9df26f32bf6220260570cde127c"
 
       def install
         bin.install "topaz"
