@@ -5,21 +5,21 @@
 class Topaz < Formula
   desc "Topaz CLI"
   homepage "https://www.topaz.sh/docs/"
-  version "0.30.19"
+  version "0.30.20"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://storage.googleapis.com/topaz-cli/topaz/0.30.19/topaz_darwin_arm64.zip", using: CurlDownloadStrategy
-      sha256 "bba41a3e4d7311ffe2377c1400447aaa99d8176ed4041adeaaa30ae36c7093c0"
+      url "https://storage.googleapis.com/topaz-cli/topaz/0.30.20/topaz_darwin_arm64.zip", using: CurlDownloadStrategy
+      sha256 "b70b39fcdc937df50f7c824848819509757222a7460036ae2fe8fc32b1bed3b5"
 
       def install
         bin.install "topaz"
       end
     end
     if Hardware::CPU.intel?
-      url "https://storage.googleapis.com/topaz-cli/topaz/0.30.19/topaz_darwin_x86_64.zip", using: CurlDownloadStrategy
-      sha256 "07221b5038f91fa4ebc37e0df3fcea80212b5eeda769bf75f60d81fff3341f9d"
+      url "https://storage.googleapis.com/topaz-cli/topaz/0.30.20/topaz_darwin_x86_64.zip", using: CurlDownloadStrategy
+      sha256 "2103114106660dd34b92e88a7f2195b7b0ef1a6da771b6a0856be8efee7708df"
 
       def install
         bin.install "topaz"
@@ -28,17 +28,17 @@ class Topaz < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://storage.googleapis.com/topaz-cli/topaz/0.30.19/topaz_linux_x86_64.zip", using: CurlDownloadStrategy
-      sha256 "b83f55bb4e61e765d4f2b598a708c98a490ac2181420c20461a8c6f3039211db"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://storage.googleapis.com/topaz-cli/topaz/0.30.20/topaz_linux_arm64.zip", using: CurlDownloadStrategy
+      sha256 "9a0bc9859c168333b2ef9bc0deb22a7d3e1d3a725e28b8d9953874c0357b6131"
 
       def install
         bin.install "topaz"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://storage.googleapis.com/topaz-cli/topaz/0.30.19/topaz_linux_arm64.zip", using: CurlDownloadStrategy
-      sha256 "07c33fc217d4ee1772f454c24d65ffc9e66ca9df26f32bf6220260570cde127c"
+    if Hardware::CPU.intel?
+      url "https://storage.googleapis.com/topaz-cli/topaz/0.30.20/topaz_linux_x86_64.zip", using: CurlDownloadStrategy
+      sha256 "bff7b8f77cf81de0b4661f1a1fde45a22011296a37d372162621b996476363cd"
 
       def install
         bin.install "topaz"
