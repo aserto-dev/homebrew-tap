@@ -11,7 +11,7 @@ class Aserto < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/aserto-dev/aserto/releases/download/v0.32.2/aserto_darwin_arm64.zip", using: CurlDownloadStrategy
-      sha256 "54dc4677cc3715f839ea30610eebaa133483ec1729fcefef0def250d48e3bda8"
+      sha256 "f41417ed68185b57c1e9062f60a7ebfb9dd1c1b715fc13cd69cbbc45c65024af"
 
       def install
         bin.install "aserto"
@@ -19,7 +19,7 @@ class Aserto < Formula
     end
     if Hardware::CPU.intel?
       url "https://github.com/aserto-dev/aserto/releases/download/v0.32.2/aserto_darwin_x86_64.zip", using: CurlDownloadStrategy
-      sha256 "c8f726e28b63d0df8bb69abd7f688d9375f10252b8b48dbc1ad638ff0ed4305a"
+      sha256 "b62578d264dc3e62adeb7d430e6739fee484460057a057d9a0ca4dfb8ea38758"
 
       def install
         bin.install "aserto"
@@ -28,17 +28,17 @@ class Aserto < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/aserto-dev/aserto/releases/download/v0.32.2/aserto_linux_x86_64.zip", using: CurlDownloadStrategy
-      sha256 "f4261d60342f74c492fb91ab9ac2baee1d8baaa58fac59390e56889e69e50bd6"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/aserto-dev/aserto/releases/download/v0.32.2/aserto_linux_arm64.zip", using: CurlDownloadStrategy
+      sha256 "6c92ff8ec5738dbc20d042d21d02c0650ed7a7eb5e69c3857347551b66902600"
 
       def install
         bin.install "aserto"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aserto-dev/aserto/releases/download/v0.32.2/aserto_linux_arm64.zip", using: CurlDownloadStrategy
-      sha256 "ddc44178fca7ed52431f0c0fe29dad971863e00fe2925044baebdfe0b2f95288"
+    if Hardware::CPU.intel?
+      url "https://github.com/aserto-dev/aserto/releases/download/v0.32.2/aserto_linux_x86_64.zip", using: CurlDownloadStrategy
+      sha256 "bcc1b9cb28b947b292dca63fd90ba66f131275ccb56f74b0ed400ad2095bbb59"
 
       def install
         bin.install "aserto"
