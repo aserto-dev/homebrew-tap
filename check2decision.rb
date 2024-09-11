@@ -5,21 +5,21 @@
 class Check2decision < Formula
   desc "Converts directory check assertions into authorizer check_decision assertions"
   homepage "https://github.com/aserto-dev/check2decision"
-  version "0.0.4"
+  version "0.0.5"
   license "MIT"
 
   on_macos do
-    if Hardware::CPU.intel?
-      url "https://github.com/aserto-dev/check2decision/releases/download/v0.0.4/check2decision_darwin_x86_64.zip", using: CurlDownloadStrategy
-      sha256 "51a8ce45e44884034a58c6dfd168e5c6e2ee223b8ddb64fc151c5ee40e303772"
+    if Hardware::CPU.arm?
+      url "https://github.com/aserto-dev/check2decision/releases/download/v0.0.5/check2decision_darwin_arm64.zip", using: CurlDownloadStrategy
+      sha256 "1b1000ca38ecc854ba2c60fdc22db52f732cfc364a86741d871c96790a0b581b"
 
       def install
         bin.install "check2decision"
       end
     end
-    if Hardware::CPU.arm?
-      url "https://github.com/aserto-dev/check2decision/releases/download/v0.0.4/check2decision_darwin_arm64.zip", using: CurlDownloadStrategy
-      sha256 "5f1e630260ff19c8f9b749d4fdb4424125d3ef33e36c6352a71ca0d07674be5f"
+    if Hardware::CPU.intel?
+      url "https://github.com/aserto-dev/check2decision/releases/download/v0.0.5/check2decision_darwin_x86_64.zip", using: CurlDownloadStrategy
+      sha256 "13e4b0fbcd74f337c5de22493073ff8c8d8e05150ce59a8b944cb31d5cb741fe"
 
       def install
         bin.install "check2decision"
@@ -28,17 +28,17 @@ class Check2decision < Formula
   end
 
   on_linux do
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/aserto-dev/check2decision/releases/download/v0.0.4/check2decision_linux_arm64.zip", using: CurlDownloadStrategy
-      sha256 "6d3df5963613a9e5804b4f028cd2d5e8cacf35b3642779ce06f9cc424857bcea"
+    if Hardware::CPU.intel?
+      url "https://github.com/aserto-dev/check2decision/releases/download/v0.0.5/check2decision_linux_x86_64.zip", using: CurlDownloadStrategy
+      sha256 "c76067ac5e8b3bcfc299394c770efa8d53e76938fe95c3c3285c054e2e529422"
 
       def install
         bin.install "check2decision"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/aserto-dev/check2decision/releases/download/v0.0.4/check2decision_linux_x86_64.zip", using: CurlDownloadStrategy
-      sha256 "3d6dcf10cbe789797c486653b4186fec5ea13ec3258f86600720cb3c7473920b"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/aserto-dev/check2decision/releases/download/v0.0.5/check2decision_linux_arm64.zip", using: CurlDownloadStrategy
+      sha256 "1c007e547d596cdd47c22aacf0bdc0f5281e0c50a28b4f0d40bbaf869e6846d2"
 
       def install
         bin.install "check2decision"
