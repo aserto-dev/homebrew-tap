@@ -5,21 +5,21 @@
 class Topaz < Formula
   desc "Topaz CLI"
   homepage "https://www.topaz.sh/docs/"
-  version "0.32.37"
+  version "0.32.38"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/aserto-dev/topaz/releases/download/v0.32.37/topaz_darwin_x86_64.zip", using: CurlDownloadStrategy
-      sha256 "721ccf2e838e64f5bfb317edc52b8d4575287eca548d1858af6165bf25e3165b"
+      url "https://github.com/aserto-dev/topaz/releases/download/v0.32.38/topaz_darwin_x86_64.zip", using: CurlDownloadStrategy
+      sha256 "09b8d7384364417ef5f930e725f3a9389d9db723ba0433926dece62ee678fba0"
 
       def install
         bin.install "topaz"
       end
     end
     on_arm do
-      url "https://github.com/aserto-dev/topaz/releases/download/v0.32.37/topaz_darwin_arm64.zip", using: CurlDownloadStrategy
-      sha256 "0fa6dbf247739c58007d0521639442614a47202f2d33b781f786745f59d763ed"
+      url "https://github.com/aserto-dev/topaz/releases/download/v0.32.38/topaz_darwin_arm64.zip", using: CurlDownloadStrategy
+      sha256 "e81493cc9226c72a97e09db1042904ed4f8c9f51951771c3c148cd17eb55e0a2"
 
       def install
         bin.install "topaz"
@@ -30,8 +30,8 @@ class Topaz < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/aserto-dev/topaz/releases/download/v0.32.37/topaz_linux_x86_64.zip", using: CurlDownloadStrategy
-        sha256 "e0c83426bfee9625f173454a4b5e7751f6fe22fc4d2ee1bb8ebc66f4c9c6a5cc"
+        url "https://github.com/aserto-dev/topaz/releases/download/v0.32.38/topaz_linux_x86_64.zip", using: CurlDownloadStrategy
+        sha256 "d73f90ea99c0417452fb70f0cb1585675c284b9022f51b337a7f0fb1ecf802b9"
 
         def install
           bin.install "topaz"
@@ -40,8 +40,8 @@ class Topaz < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/aserto-dev/topaz/releases/download/v0.32.37/topaz_linux_arm64.zip", using: CurlDownloadStrategy
-        sha256 "c78c6a6e80dcace37c0b018cf22758ba184b78b70be9725bfc11973f6cb945f5"
+        url "https://github.com/aserto-dev/topaz/releases/download/v0.32.38/topaz_linux_arm64.zip", using: CurlDownloadStrategy
+        sha256 "b30327a75d4273bdc66adcbf37b6739408616fa8827b5af0c463c0fd4dd5c5ab"
 
         def install
           bin.install "topaz"
