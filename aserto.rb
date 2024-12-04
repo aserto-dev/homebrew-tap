@@ -5,21 +5,21 @@
 class Aserto < Formula
   desc "Aserto CLI"
   homepage "https://docs.aserto.com/"
-  version "0.32.7"
+  version "0.32.8"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/aserto-dev/aserto/releases/download/v0.32.7/aserto_darwin_x86_64.zip", using: CurlDownloadStrategy
-      sha256 "4b598ef68c9d257f29acf7ca44076ba02a5dd6f218d3eb1bc7086ce6a89e5ebd"
+      url "https://github.com/aserto-dev/aserto/releases/download/v0.32.8/aserto_darwin_x86_64.zip", using: CurlDownloadStrategy
+      sha256 "eb85929b81dedc43ca4c51273df082e15672253c415e2cfafd7b163aa0e61265"
 
       def install
         bin.install "aserto"
       end
     end
     on_arm do
-      url "https://github.com/aserto-dev/aserto/releases/download/v0.32.7/aserto_darwin_arm64.zip", using: CurlDownloadStrategy
-      sha256 "12e19ed85b8a906bc79a182bbda8f5bf82ff84d4a7695257e0a74df763021843"
+      url "https://github.com/aserto-dev/aserto/releases/download/v0.32.8/aserto_darwin_arm64.zip", using: CurlDownloadStrategy
+      sha256 "94301f9d8e19a896d47467903f94cd580376f920af5c45c57a28126cf8697f98"
 
       def install
         bin.install "aserto"
@@ -30,8 +30,8 @@ class Aserto < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/aserto-dev/aserto/releases/download/v0.32.7/aserto_linux_x86_64.zip", using: CurlDownloadStrategy
-        sha256 "e50de0cec8a2ba57eaa2cf6fe6ad046ed0887bf29a096567a113f75f785552b3"
+        url "https://github.com/aserto-dev/aserto/releases/download/v0.32.8/aserto_linux_x86_64.zip", using: CurlDownloadStrategy
+        sha256 "5b1366e02c41e66164334d8ae20e22cf5b6ff5f90e378df7c81e8ac002832063"
 
         def install
           bin.install "aserto"
@@ -40,8 +40,8 @@ class Aserto < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/aserto-dev/aserto/releases/download/v0.32.7/aserto_linux_arm64.zip", using: CurlDownloadStrategy
-        sha256 "61cde0ce1210a4ff7f4f78a1f37bdeb9c278800245645b7091b144c001ee8cee"
+        url "https://github.com/aserto-dev/aserto/releases/download/v0.32.8/aserto_linux_arm64.zip", using: CurlDownloadStrategy
+        sha256 "dab2f88ce2b5a60b71590803d3609bfc70933e0d45764c1762ce14f766763025"
 
         def install
           bin.install "aserto"
