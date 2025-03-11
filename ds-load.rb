@@ -5,13 +5,13 @@
 class DsLoad < Formula
   desc "DS Load CLI"
   homepage "https://docs.aserto.com/"
-  version "0.31.0"
+  version "0.32.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/aserto-dev/ds-load/releases/download/v0.31.0/ds-load_0.31.0_darwin_x86_64.zip", using: CurlDownloadStrategy
-      sha256 "696c7befcb7549acf5ac7383c54543920361a4759e028ee0de25a21b93790d82"
+      url "https://github.com/aserto-dev/ds-load/releases/download/v0.32.0/ds-load_0.32.0_darwin_x86_64.zip", using: CurlDownloadStrategy
+      sha256 "3b9861a24b021f9dfe0143840191f0deb033798a83c0bd9c7517ace5c3bac0c4"
 
       def install
         bin.install "ds-load"
@@ -21,14 +21,15 @@ class DsLoad < Formula
         bin.install "ds-load-cognito"
         bin.install "ds-load-fusionauth"
         bin.install "ds-load-google"
+        bin.install "ds-load-jumpcloud"
         bin.install "ds-load-ldap"
         bin.install "ds-load-okta"
         bin.install "ds-load-openapi"
       end
     end
     on_arm do
-      url "https://github.com/aserto-dev/ds-load/releases/download/v0.31.0/ds-load_0.31.0_darwin_arm64.zip", using: CurlDownloadStrategy
-      sha256 "e6616ed3140af4bdc224010753dc664dd03190a62f0216c9fe55318cf3035726"
+      url "https://github.com/aserto-dev/ds-load/releases/download/v0.32.0/ds-load_0.32.0_darwin_arm64.zip", using: CurlDownloadStrategy
+      sha256 "09c1298587192426144e671a04a3c0a392ce891275f11a2aa01a19d0f5cc52d6"
 
       def install
         bin.install "ds-load"
@@ -38,6 +39,7 @@ class DsLoad < Formula
         bin.install "ds-load-cognito"
         bin.install "ds-load-fusionauth"
         bin.install "ds-load-google"
+        bin.install "ds-load-jumpcloud"
         bin.install "ds-load-ldap"
         bin.install "ds-load-okta"
         bin.install "ds-load-openapi"
@@ -48,8 +50,8 @@ class DsLoad < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/aserto-dev/ds-load/releases/download/v0.31.0/ds-load_0.31.0_linux_x86_64.zip", using: CurlDownloadStrategy
-        sha256 "951d7376c102e5c03d3eb15a1d3b9a32e38c50c3c55ceab18690870bba82f6aa"
+        url "https://github.com/aserto-dev/ds-load/releases/download/v0.32.0/ds-load_0.32.0_linux_x86_64.zip", using: CurlDownloadStrategy
+        sha256 "81b59a095053b661c45482c97eaded24675cd52f52149ed19d793b610d3a0b35"
 
         def install
           bin.install "ds-load"
@@ -59,6 +61,7 @@ class DsLoad < Formula
           bin.install "ds-load-cognito"
           bin.install "ds-load-fusionauth"
           bin.install "ds-load-google"
+          bin.install "ds-load-jumpcloud"
           bin.install "ds-load-ldap"
           bin.install "ds-load-okta"
           bin.install "ds-load-openapi"
@@ -67,8 +70,8 @@ class DsLoad < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/aserto-dev/ds-load/releases/download/v0.31.0/ds-load_0.31.0_linux_arm64.zip", using: CurlDownloadStrategy
-        sha256 "2a8960735350baebab410b59ea277633e146a8b5cd0557a33a40c5c1f83e9ec0"
+        url "https://github.com/aserto-dev/ds-load/releases/download/v0.32.0/ds-load_0.32.0_linux_arm64.zip", using: CurlDownloadStrategy
+        sha256 "d75a13cc7ca07b0393a81ce5f2ae669b1bfe3aee359977b9b188952eb9af3b77"
 
         def install
           bin.install "ds-load"
@@ -78,6 +81,7 @@ class DsLoad < Formula
           bin.install "ds-load-cognito"
           bin.install "ds-load-fusionauth"
           bin.install "ds-load-google"
+          bin.install "ds-load-jumpcloud"
           bin.install "ds-load-ldap"
           bin.install "ds-load-okta"
           bin.install "ds-load-openapi"
