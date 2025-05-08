@@ -5,13 +5,13 @@
 class DsLoad < Formula
   desc "DS Load CLI"
   homepage "https://docs.aserto.com/"
-  version "0.32.5"
+  version "0.32.6"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/aserto-dev/ds-load/releases/download/v0.32.5/ds-load_0.32.5_darwin_x86_64.zip", using: CurlDownloadStrategy
-      sha256 "2610bdcff7dd80263fed6913fcfe5dabe7bb6fd0771ccabaed0e99f3da5a32af"
+      url "https://github.com/aserto-dev/ds-load/releases/download/v0.32.6/ds-load_0.32.6_darwin_x86_64.zip", using: CurlDownloadStrategy
+      sha256 "3006417d038389f293e0a6d8775ce0468cfb49c5d1f3b6f5b704b1f44168c8d9"
 
       def install
         bin.install "ds-load"
@@ -28,8 +28,8 @@ class DsLoad < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/aserto-dev/ds-load/releases/download/v0.32.5/ds-load_0.32.5_darwin_arm64.zip", using: CurlDownloadStrategy
-      sha256 "f688ef6c42b8fd140b546fce889cda82956897d948afbf120502cfc39de3ebe3"
+      url "https://github.com/aserto-dev/ds-load/releases/download/v0.32.6/ds-load_0.32.6_darwin_arm64.zip", using: CurlDownloadStrategy
+      sha256 "80892125f17bab4c3f8ef2a89118302d3010a4b86d587aa26810e11dfd655ee8"
 
       def install
         bin.install "ds-load"
@@ -50,8 +50,8 @@ class DsLoad < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/aserto-dev/ds-load/releases/download/v0.32.5/ds-load_0.32.5_linux_x86_64.zip", using: CurlDownloadStrategy
-        sha256 "ed80474ab6b17e6ccddcbd63a2a10a6653b76e47bd242ccfa2a5b6adb5e68bdd"
+        url "https://github.com/aserto-dev/ds-load/releases/download/v0.32.6/ds-load_0.32.6_linux_x86_64.zip", using: CurlDownloadStrategy
+        sha256 "44b16cd2240b9d884a8ed53f7d6722abfa085bd0ed718031860dd6f39fe0e161"
 
         def install
           bin.install "ds-load"
@@ -70,8 +70,8 @@ class DsLoad < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/aserto-dev/ds-load/releases/download/v0.32.5/ds-load_0.32.5_linux_arm64.zip", using: CurlDownloadStrategy
-        sha256 "f2e41667a31f510e850982da40f83f9ddb32f82499e6b44243a959e994da4e6f"
+        url "https://github.com/aserto-dev/ds-load/releases/download/v0.32.6/ds-load_0.32.6_linux_arm64.zip", using: CurlDownloadStrategy
+        sha256 "3904bfaf22f1ddc93d1654ee437f2b0573ce0e0a12620b7ca90e4a2fd9c16b32"
 
         def install
           bin.install "ds-load"
