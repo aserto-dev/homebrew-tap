@@ -42,6 +42,5 @@ V2 compatible:
 | Aserto brew name                                                 | Installation                                 | Descriptions                |
 | -----------------------------------------------------------------| ---------------------------------------------|---------------------------- |
 | [topaz](https://github.com/aserto-dev/topaz)                     | `brew install aserto-dev/tap/topaz`          | topaz command line          |
-| [aserto](https://github.com/aserto-dev/aserto)                   | `brew install aserto-dev/tap/aserto`         | aserto command line         |
+line         |
 | [ds-load](https://github.com/aserto-dev/ds-load)                 | `brew install aserto-dev/tap/ds-load`        | directory loader            |
-| [check2decision](https://github.com/aserto-dev/check2decision)   | `brew install aserto-dev/tap/check2decision` | assertion converter         |
