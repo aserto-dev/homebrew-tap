@@ -14,22 +14,22 @@ cask "topaz" do
   on_macos do
     on_intel do
       url "https://github.com/aserto-dev/topaz/releases/download/v#{version}/topaz_darwin_amd64.zip"
-      sha256 "2c917a148c98ef35c1facd2522acc14262a66d5a82b0110f14917e9f7b49f906"
+      sha256 "fe4ab2206dcb34b6fea436b9da3b7db54b1e15d135a3be39e59b5326a62d79a5"
     end
     on_arm do
       url "https://github.com/aserto-dev/topaz/releases/download/v#{version}/topaz_darwin_arm64.zip"
-      sha256 "4cb3dc1db2030520cefd0b68c538e1d4c59f6d506aecf01eb87393232d8b1797"
+      sha256 "9013c31605b84639f58f211c29d8c96fcf128bab84f9d9434931e5e64e05ed6b"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/aserto-dev/topaz/releases/download/v#{version}/topaz_linux_amd64.zip"
-      sha256 "8fb6b3ac1d177c7eef442f46d0f40473be1eb5773ccb3e8b048e78f37a3f0925"
+      sha256 "c7e1b85f5dd80583bda93b4f97714b54951363a502811b433b7f26abbab7278e"
     end
     on_arm do
       url "https://github.com/aserto-dev/topaz/releases/download/v#{version}/topaz_linux_arm64.zip"
-      sha256 "76b1bf75e92e0865cb5f994107e48ae5f9696e22c819f16102138c010b818801"
+      sha256 "2087915fade2f618e9542fad18eaa749bae36b520d87659d71e315236d1d704b"
     end
   end
 
