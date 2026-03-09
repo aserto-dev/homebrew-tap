@@ -3,7 +3,7 @@ cask "topaz" do
   name "topaz"
   desc "Topaz CLI"
   homepage "https://www.topaz.sh/docs/"
-  version "0.33.11"
+  version "0.33.12"
 
   livecheck do
     skip "Auto-generated on release."
@@ -15,12 +15,12 @@ cask "topaz" do
     on_intel do
       url "https://github.com/aserto-dev/topaz/releases/download/v#{version}/topaz_darwin_amd64.zip",
         verified: "github.com/aserto-dev/topaz"
-      sha256 "bae238210167ac685600e6c7a1217ad5051001b264abbbe15a6a867580083dbb"
+      sha256 "bf112f1944226e4f9043de2740841c70b78ef17d874c690f5367b4f8475a1d57"
     end
     on_arm do
       url "https://github.com/aserto-dev/topaz/releases/download/v#{version}/topaz_darwin_arm64.zip",
         verified: "github.com/aserto-dev/topaz"
-      sha256 "43cb0968b51a35b841fa92f8a6829d994c5f62e83bc442e0e679f4da56c0f12d"
+      sha256 "2cb2e8f5bd60af9d9e0d453ef233bd95946c5a687ac753379b7649adebe42791"
     end
   end
 
@@ -28,12 +28,12 @@ cask "topaz" do
     on_intel do
       url "https://github.com/aserto-dev/topaz/releases/download/v#{version}/topaz_linux_amd64.zip",
         verified: "github.com/aserto-dev/topaz"
-      sha256 "d58e2b61c527915a27dd18465385b38852737d9d68f91a3a65a904f68f462be0"
+      sha256 "5de2566873be6e8a0b4625f1af4595eb7701ab168bb9c2763b2f768dbd1253cf"
     end
     on_arm do
       url "https://github.com/aserto-dev/topaz/releases/download/v#{version}/topaz_linux_arm64.zip",
         verified: "github.com/aserto-dev/topaz"
-      sha256 "3b7c44840a67099330aafdf0d7ff86365092a2e42818a0d334523f06081ba0e0"
+      sha256 "6264d1b732c2406d594c7475ca67cb45152624ad044efc2bb29ed0cfdb31ac10"
     end
   end
 
