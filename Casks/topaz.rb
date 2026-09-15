@@ -5,25 +5,21 @@ cask "topaz" do
   on_macos do
     on_arm do
       sha256 "4b81e9c48d0ca5b7feed32d87a9096f3debe59b948418475035b83031948f76b"
-      url "https://github.com/aserto-dev/topaz/releases/download/v#{version}/topaz_darwin_arm64.zip",
-        verified: "github.com/aserto-dev/topaz"
+      url "https://github.com/aserto-dev/topaz/releases/download/v#{version}/topaz_darwin_arm64.zip"
     end
     on_intel do
       sha256 "1a3ff7d0a298a6cc75a68fcc778d6ddae74c3812f77c6c1c228c84e2961cb214"
-      url "https://github.com/aserto-dev/topaz/releases/download/v#{version}/topaz_darwin_amd64.zip",
-        verified: "github.com/aserto-dev/topaz"
+      url "https://github.com/aserto-dev/topaz/releases/download/v#{version}/topaz_darwin_amd64.zip"
     end
   end
   on_linux do
     on_arm do
       sha256 "9321494c10a4ae1a374df701b7d9646b5c340b68a3085ba4b435f938c0429d29"
-      url "https://github.com/aserto-dev/topaz/releases/download/v#{version}/topaz_linux_arm64.zip",
-        verified: "github.com/aserto-dev/topaz"
+      url "https://github.com/aserto-dev/topaz/releases/download/v#{version}/topaz_linux_arm64.zip"
     end
     on_intel do
       sha256 "a02267650e73c32784f9a8d0596fc8e335499eca42884fb267b34ce499b7971d"
-      url "https://github.com/aserto-dev/topaz/releases/download/v#{version}/topaz_linux_amd64.zip",
-        verified: "github.com/aserto-dev/topaz"
+      url "https://github.com/aserto-dev/topaz/releases/download/v#{version}/topaz_linux_amd64.zip"
     end
   end
 
@@ -37,9 +33,9 @@ cask "topaz" do
 
   binary "topaz"
 
-  postflight do
-    if OS.mac?
-      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/topaz"]
+  postflight_steps do
+    on_macos do
+      run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "{{staged_path}/topaz"]
     end
   end
 
