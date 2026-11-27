@@ -34,7 +34,8 @@ $ brew uninstall --cask aserto-dev/tap/topaz
 
 ## Available brews:
 
-| Name                                             | Installation                                 |
-| -------------------------------------------------| ---------------------------------------------|
-| [topaz](https://github.com/aserto-dev/topaz)     | `brew install --cask aserto-dev/tap/topaz`   |
-| [ds-load](https://github.com/aserto-dev/ds-load) | `brew install --cask aserto-dev/tap/ds-load` |
+| Name                                             | Installation                                   |
+| -------------------------------------------------| -----------------------------------------------|
+| [topaz](https://github.com/aserto-dev/topaz)     | `brew install --cask aserto-dev/tap/topaz`     |
+| [topaz-opa](https://github.com/aserto-dev/topaz) | `brew install --cask aserto-dev/tap/topaz-opa` |
+| [ds-load](https://github.com/aserto-dev/ds-load) | `brew install --cask aserto-dev/tap/ds-load`   |
